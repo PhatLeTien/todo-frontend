@@ -1,0 +1,52 @@
+body {
+  background-image: url(../assets/background-to-do-list.jpg);
+  background-size: cover;
+}
+
+.container {
+  width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+
+  background: rgba(255,255,255,0.1);
+  border-radius: 20px;
+
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.container h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.todo {
+  background: rgba(255,255,255,0.2);
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo button {
+  background: rgba(255,255,255,0.3);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.todo button:hover {
+  background: rgba(255,255,255,0.5);
+}
+
+.todo input {
+  border-radius: 5px;
+  border: none;
+}

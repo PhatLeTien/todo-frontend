@@ -1,0 +1,46 @@
+/* Container bao quanh cả input và button */
+.input-box {
+  display: flex; /* Đưa input và button lên cùng một hàng */
+  gap: 10px;    /* Tạo khoảng cách giữa input và button */
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 500px; /* Giới hạn độ rộng để không bị quá dài */
+}
+
+/* Tùy chỉnh cho ô nhập liệu */
+.input-box input {
+  flex: 1;             /* Để ô input tự động chiếm hết khoảng trống còn lại */
+  padding: 12px 15px;  /* Tạo không gian bên trong cho dễ nhìn */
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;  /* Bo góc nhẹ cho hiện đại */
+  font-size: 16px;
+  outline: none;       /* Bỏ đường viền mặc định khi click vào */
+  transition: border-color 0.3s ease; /* Hiệu ứng mượt mà khi đổi màu */
+}
+
+/* Hiệu ứng khi người dùng click vào ô input */
+.input-box input:focus {
+  border-color: #00ff44; /* Màu xanh lá cây tươi sáng khi focus */
+}
+
+/* Tùy chỉnh cho nút Add */
+.input-box button {
+  padding: 12px 20px;
+  background-color: #10e348; /* Màu xanh lá cây tươi sáng */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+/* Hiệu ứng khi di chuột qua nút (Hover) */
+.input-box button:hover {
+  background-color: #2db551; /* Màu xanh lá cây đậm hơn khi hover */
+}
+
+/* Hiệu ứng khi nhấn nút (Active) */
+.input-box button:active {
+  transform: scale(0.95); /* Nhấn xuống tạo cảm giác vật lý */
+}
